@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import { ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+import { ROUTER_DIRECTIVES } from 'angular2/router';
 
 import { Sport } from './sport';
 import { SportService } from './sport.service';
@@ -9,7 +9,6 @@ import { SportService } from './sport.service';
   templateUrl: 'app/sport.component.html',
   directives: [ROUTER_DIRECTIVES],
   providers: [
-    ROUTER_PROVIDERS,
     SportService
   ]
 })
