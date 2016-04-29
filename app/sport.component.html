@@ -1,0 +1,4 @@
+<ul class="nav nav-tabs">
+  <li role="presentation"><a [routerLink]="['Dashboard']">Dashboard</a></li>
+  <li role="presentation" *ngFor="#sport of sports"><a  [routerLink]="['Matches', {id: sport.id}]">{{sport.name}}</a></li>
+</ul>
